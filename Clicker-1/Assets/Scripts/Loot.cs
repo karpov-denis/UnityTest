@@ -26,12 +26,20 @@ public class Loot : ScriptableObject
         {
             return gold;
         }
+        set
+        {
+            gold = value;
+        }
     }
     public int Metal
     {
         get
         {
             return metal;
+        }
+        set
+        {
+            metal = value;
         }
     }
     public int Uranium
@@ -40,6 +48,10 @@ public class Loot : ScriptableObject
         {
             return uranium;
         }
+        set
+        {
+            uranium = value;
+        }
     }
     public int Platinum
     {
@@ -47,12 +59,20 @@ public class Loot : ScriptableObject
         {
             return platinum;
         }
+        set
+        {
+            platinum = value;
+        }
     }
     public int Gas
     {
         get
         {
             return gas;
+        }
+        set
+        {
+            gas = value;
         }
     }
     // Start is called before the first frame update

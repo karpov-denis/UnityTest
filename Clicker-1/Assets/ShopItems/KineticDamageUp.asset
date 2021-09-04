@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c55bcdb6850b654eb54dc9052e85414, type: 3}
+  m_Name: KineticDamageUp
+  m_EditorClassIdentifier: 
+  _image: {fileID: 21300000, guid: 2a616b0b2d5036a43ad4edd8deb54be5, type: 3}
+  LimitOfBought: 100
+  _description: "\u0423\u0432\u0435\u043B\u0438\u0447\u0438\u0442\u044C \u043A\u0438\u043D\u0435\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0439
+    \u0443\u0440\u043E\u043D"
+  Type: 0
+  amount: 1
+  _Price: {fileID: 0}
+  _newPrice: {fileID: 11400000, guid: 5eddf44b6c6c493429a32da0bd6ad916, type: 2}

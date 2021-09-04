@@ -96,6 +96,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 10
+  _KineticArmor: 2
+  _EMArmor: 0
+  _LaserArmor: 0
+  _RocketArmor: 0
   _ProfitGold: 200
   _ProfitMetal: 100
   _ProfitUranium: 5

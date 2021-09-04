@@ -17,4 +17,8 @@ public class Player : MonoBehaviour
     {
         _playerResourses.AddTargetProfit(new Loot(target.GoldProfit, target.MetalProfit, target.UraniumProfit, target.PlatinumProfit, target.GasProfit));
     }
+    public bool isEnoughtResourses(Loot price)
+    {
+        return _playerResourses.GoldAmount >= price.Gold && _playerResourses.MetalAmount >= price.Metal && _playerResourses.PlatinumAmount >= price.Platinum && _playerResourses.UraniumAmount >= price.Uranium && _playerResourses.GasAmount >= price.Gas;
+    }
 }

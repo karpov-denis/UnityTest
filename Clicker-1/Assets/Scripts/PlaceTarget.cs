@@ -7,6 +7,7 @@ public class PlaceTarget : MonoBehaviour
 {
     [SerializeField] private Target _target;
     [SerializeField] private ClickerZone _clickerZone;
+    [SerializeField] private int _currentLevel=1;
 
     public event UnityAction<Target> TargetDown;
     public event UnityAction<Target> TargetComplete;
@@ -18,7 +19,12 @@ public class PlaceTarget : MonoBehaviour
 
     public void SetTarget(Target target)
     {
+        _currentLevel++;
         _target = Instantiate(target, transform);
+        if(_currentLevel<40)
+            _target.AdvanceTarget(_currentLevel, 0);
+        else if (_currentLevel < 100)
+            _target.AdvanceTarget(_currentLevel, 1);
         _clickerZone.Click += _target.onClick;
         _target.TargetKilled += onTargetDone;
         Debug.Log("Событие привязано");
