@@ -38,12 +38,6 @@ public class Target : MonoBehaviour
 
     private bool isPenetrated(DamageTypes types)
     {
-        //if (types.Kinetic < _KineticArmor || types.EM < _EMArmor || types.Laser < _LaserArmor || types.Rocket < _RocketArmor)
-        //{
-        //    return false;
-        //}
-        //else
-        //    return true;
 
         return !(types.Kinetic < _KineticArmor || types.EM < _EMArmor || types.Laser < _LaserArmor || types.Rocket < _RocketArmor);
     }
@@ -67,23 +61,26 @@ public class Target : MonoBehaviour
         return isDefeated();
     }
 
-    public void AdvanceTarget(int level, int advance)
+    public void AdvanceTarget(int level)
     {
-        Health = Health * ((level / 5) + 1);
-        if (advance > 0)
+        Health =(int)((float)Health* 0.5*level);
+        _KineticArmor = (int)(_KineticArmor * 0.3 * level);
+        _EMArmor = (int)(_EMArmor * 0.3 * level);
+        _LaserArmor = (int)(_LaserArmor * 0.3 * level);
+        _RocketArmor = (int)(_RocketArmor * 0.3 * level);
+        _ProfitGold = (int)(_ProfitGold * 1.05 * level);
+        _ProfitMetal = (int)(_ProfitMetal * 1.05 * level);
+        _ProfitUranium = (int)(_ProfitUranium * 1.05 * level);
+        _ProfitPlatinum = (int)(_ProfitPlatinum * 1.05 * level);
+        _ProfitGas = (int)(_ProfitGas * 1.05 * level);
+        if (level >30)
         {
-            _KineticArmor = _KineticArmor * ((level / 20) + 1) + 1;
-            _EMArmor = _KineticArmor * ((level / 20) + 1) + 1;
-            _LaserArmor = _LaserArmor * ((level / 20) + 1) + 1;
-            _RocketArmor = _RocketArmor * ((level / 20) + 1) + 1;
+            _KineticArmor++;
+            _EMArmor++;
+            _LaserArmor++;
+            _RocketArmor++;
         }
-        else
-        {
-            _KineticArmor = _KineticArmor * ((level / 20) + 1);
-            _EMArmor = _KineticArmor * ((level / 20) + 1);
-            _LaserArmor = _LaserArmor * ((level / 20) + 1);
-            _RocketArmor = _RocketArmor * ((level / 20) + 1);
-        }
+
     }
     private void Start()
     {

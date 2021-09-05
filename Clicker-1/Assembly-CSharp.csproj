@@ -57,21 +57,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlaceTarget.cs" />
+    <Compile Include="Assets\Scripts\ShopButton.cs" />
+    <Compile Include="Assets\Scripts\SO_ShopItem.cs" />
     <Compile Include="Assets\Scripts\ResourseDisplay.cs" />
+    <Compile Include="Assets\Scripts\SliderUI.cs" />
     <Compile Include="Assets\Scripts\PlayerResourses.cs" />
+    <Compile Include="Assets\Scripts\Shop.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\DamageTypes.cs" />
     <Compile Include="Assets\Scripts\UI_collectingResourses.cs" />
     <Compile Include="Assets\Scripts\Target.cs" />
     <Compile Include="Assets\Scripts\Loot.cs" />
     <Compile Include="Assets\Scripts\ClickerZone.cs" />
     <Compile Include="Assets\Scripts\TargetSpawner.cs" />
     <Compile Include="Assets\Scripts\ItemInfo.cs" />
-    <Compile Include="Assets\Scripts\SO_ShopItem.cs" />
-    <Compile Include="Assets\Scripts\DamageTypes.cs" />
-    <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
-    <Compile Include="Assets\Scripts\Shop.cs" />
-    <Compile Include="Assets\Scripts\ShopButton.cs" />
-    <Compile Include="Assets\Scripts\SliderUI.cs" />
+    <Compile Include="Assets\Scripts\NotEnoughtMoneyScript.cs" />
+    <Compile Include="Assets\Scripts\ShopResourses.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

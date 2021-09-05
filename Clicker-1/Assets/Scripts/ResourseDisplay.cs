@@ -23,10 +23,10 @@ public class ResourseDisplay : MonoBehaviour
     }
     private void onMetalChanged(int Metal)
     {
-        _goldDisplay.text = Metal.ToString();
+        _metalDisplay.text = Metal.ToString();
     }
     private void onGoldChanged(int Gold)
     {
-        _metalDisplay.text = Gold.ToString();
+        _goldDisplay.text = Gold.ToString();
     }
 }
